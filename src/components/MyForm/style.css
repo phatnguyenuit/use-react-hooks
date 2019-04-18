@@ -1,0 +1,63 @@
+.my-form {
+  font-size: 1rem;
+  padding: 5px;
+  width: 20rem;
+  margin: 0 auto;
+}
+
+.field-group {
+  margin-bottom: 10px;
+}
+
+.field-label {
+  font-weight: bold;
+  text-transform: capitalize;
+  margin-right: 5px;
+  width: 30%;
+  text-align: right;
+  display: inline-block;
+}
+
+.field-text {
+  height: 30px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  padding: 0 10px;
+  border: 1px solid burlywood;
+}
+
+.field-text:focus {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px orange;
+  border-color: orange;
+  outline: none;
+}
+
+.field-radio-group {
+  display: inline-block;
+}
+
+.field-radio {
+  color: yellow;
+}
+
+.btnReset {
+  display: inline-block;
+  height: 2.5em;
+  border: 1px solid burlywood;
+  background: transparent;
+  border-radius: 8px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  width: 100%;
+}
+
+.btnReset:focus {
+  outline: none;
+  border-color: orange;
+  box-shadow: 0 0 5px orange;
+}
