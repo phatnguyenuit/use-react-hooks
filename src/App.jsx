@@ -13,14 +13,18 @@ class App extends Component {
 				<header className="App-header">
 					<img src={logo} className="App-logo" alt="logo" />
 					<p>
-						Edit <code>src/App.js</code> and save to reload.
+						<p>Hello, here are some simple demos with React Hooks!</p>
 					</p>
-					<a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-						Learn React
+					<a
+						className="App-link"
+						href="https://github.com/phatnguyenuit/use-react-hooks"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						Checkout source code here!
 					</a>
 				</header>
 				<main className="fullHeight">
-					<p>Hello, some simple demo with React Hooks!</p>
 					1. <code>useReducer</code>
 					<div>
 						Counter
