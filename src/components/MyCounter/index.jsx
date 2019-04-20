@@ -21,27 +21,34 @@ const reducer = (state, action) => {
 	}
 };
 
-const MyCounterHOC = (state, dispatch) => {
-	const { value } = state;
+const MyCounter = ({ value, increase, decrease, reset }) => {
 	return (
 		<div className="button-group">
-			<button className="button button--left" onClick={() => dispatch({ type: 'decrement' })}>
+			<button className="button button--left" onClick={decrease}>
 				-
 			</button>
 			<div className="value">{value}</div>
-			<button className="button button--right" onClick={() => dispatch({ type: 'increment' })}>
+			<button className="button button--right" onClick={increase}>
 				+
 			</button>
-			<button className="button button--full-width" onClick={() => dispatch({ type: 'set', value: 0 })}>
+			<button className="button button--full-width" onClick={reset}>
 				reset
 			</button>
 		</div>
 	);
 };
 
-const MyCounter = () => {
+const MyCounterReducerHOC = (state, dispatch) => {
+	const { value } = state;
+	const decrease = () => dispatch({ type: 'decrement' });
+	const increase = () => dispatch({ type: 'increment' });
+	const reset = () => dispatch({ type: 'set', value: 0 });
+	return <MyCounter {...{ value, increase, decrease, reset }} />;
+};
+
+const MyCounterReducer = () => {
 	const [ state, dispatch ] = useReducer(reducer, initialState);
-	return MyCounterHOC(state, dispatch);
+	return MyCounterReducerHOC(state, dispatch);
 };
 
 // with Context
@@ -51,15 +58,10 @@ const CounterProvider = ({ children }) => {
 	return <CounterContext.Provider value={contextValue}>{children}</CounterContext.Provider>;
 };
 
-const useCount = () => {
-	const contextValue = useContext(CounterContext);
-	return contextValue;
+const MyCounterWithContext = () => {
+	const [ state, dispatch ] = useContext(CounterContext);
+	return MyCounterReducerHOC(state, dispatch);
 };
 
-const MyCounterContext = () => {
-	const [ state, dispatch ] = useCount();
-	return MyCounterHOC(state, dispatch);
-};
-
-export { MyCounterContext, CounterProvider };
-export default MyCounter;
+export { MyCounterWithContext, CounterProvider };
+export default MyCounterReducer;

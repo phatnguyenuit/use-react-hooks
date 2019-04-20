@@ -1,9 +1,9 @@
 import './App.css';
 
-import MyCounter, { CounterProvider, MyCounterContext } from './components/MyCounter';
+import MyCounterReducer, { CounterProvider, MyCounterWithContext } from './components/MyCounter';
+import MyForm, { FormProvider, MyFormWithContext } from './components/MyForm';
 import React, { Component } from 'react';
 
-import MyForm from './components/MyForm';
 import logo from './logo.svg';
 
 class App extends Component {
@@ -12,9 +12,7 @@ class App extends Component {
 			<div className="App">
 				<header className="App-header">
 					<img src={logo} className="App-logo" alt="logo" />
-					<p>
-						<p>Hello, here are some simple demos with React Hooks!</p>
-					</p>
+					<p>Hello, here are some simple demos with React Hooks!</p>
 					<a
 						className="App-link"
 						href="https://github.com/phatnguyenuit/use-react-hooks"
@@ -24,23 +22,32 @@ class App extends Component {
 						Checkout source code here!
 					</a>
 				</header>
-				<main className="fullHeight">
-					1. <code>useReducer</code>
+				<main className="App-content">
+					<h3>
+						1. <code>useReducer</code>
+					</h3>
 					<div>
-						Counter
-						<MyCounter />
+						<h4>Counter</h4>
+						<MyCounterReducer />
 					</div>
 					<div>
-						My Form
+						<h4>My Form</h4>
 						<MyForm />
 					</div>
-					2. <code>useContext</code>
+					<h3>
+						2. <code>useContext</code>
+					</h3>
 					<div>
-						Counter
+						<h4>Counter</h4>
 						<CounterProvider>
-							<MyCounterContext />
-							<MyCounterContext />
+							<MyCounterWithContext />
 						</CounterProvider>
+					</div>
+					<div>
+						<h4>My Form</h4>
+						<FormProvider>
+							<MyFormWithContext />
+						</FormProvider>
 					</div>
 				</main>
 			</div>

@@ -24,7 +24,7 @@
   text-decoration: none;
 }
 
-.fullHeight {
+.App-content {
   margin-top: 2rem;
   font-size: calc(10px + 2vmin);
 }
