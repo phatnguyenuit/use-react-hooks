@@ -8,8 +8,9 @@ Some examples for using [React Hooks](https://reactjs.org/docs/hooks-reference.h
 - [x] [useReducer](https://reactjs.org/docs/hooks-reference.html#usereducer)
 - [x] [useContext](https://reactjs.org/docs/hooks-reference.html#usecontext)
 - [x] [useEffect](https://reactjs.org/docs/hooks-reference.html#useeffect)
-- [ ] [useCallback](https://reactjs.org/docs/hooks-reference.html#usecallback)
-- [ ] [useMemo](https://reactjs.org/docs/hooks-reference.html#usememo)
+- [x] [useCallback](https://reactjs.org/docs/hooks-reference.html#usecallback)
+- [x] [useMemo](https://reactjs.org/docs/hooks-reference.html#usememo)
+- [x] [useRef](https://reactjs.org/docs/hooks-reference.html#useref)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

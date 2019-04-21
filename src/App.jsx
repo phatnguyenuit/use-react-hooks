@@ -12,6 +12,8 @@ import MyFormUseState, {
 } from "./components/MyForm";
 import React, { Component } from "react";
 
+import CallbackCount from "./components/CallbackCount";
+import Hello from "./components/Hello";
 import NewsList from "./components/HackerNews";
 import logo from "./logo.svg";
 
@@ -75,6 +77,20 @@ class App extends Component {
           <div>
             <h4>Hacker News</h4>
             <NewsList />
+          </div>
+          <h3>
+            5. <code>useCallback</code> &amp; <code>useMemo</code>
+          </h3>
+          <div>
+            <h4>Callback Count</h4>
+            <CallbackCount />
+          </div>
+          <h3>
+            6. <code>useRef</code>
+          </h3>
+          <div>
+            <h4>Hello Form</h4>
+            <Hello />
           </div>
         </main>
       </div>

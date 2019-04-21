@@ -1,0 +1,52 @@
+.hello-container {
+  width: 50%;
+  margin: 0 auto;
+
+  .greet {
+    font-size: 1.5em;
+    color: coral;
+  }
+
+  .hello-form {
+    color: brown;
+
+    .field-text {
+      height: 2.5em;
+      width: 50%;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      padding: 0 10px;
+      border: 1px solid burlywood;
+      margin-right: 10px;
+
+      &:focus {
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        box-shadow: 0 0 5px orange;
+        border-color: orange;
+        outline: none;
+      }
+    }
+
+    .button {
+      display: inline-block;
+      height: 2.5em;
+      width: 20%;
+      border: 1px solid burlywood;
+      background: transparent;
+      border-radius: 8px;
+      font-weight: bold;
+      text-transform: uppercase;
+      cursor: pointer;
+
+      &:focus {
+        outline: none;
+        border-color: orange;
+        box-shadow: 0 0 5px orange;
+      }
+    }
+  }
+
+}

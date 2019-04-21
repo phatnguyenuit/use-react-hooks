@@ -26,15 +26,15 @@
     border-radius: 5px;
     padding: 0 10px;
     border: 1px solid burlywood;
-  }
 
-  .field-text:focus {
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    box-shadow: 0 0 5px orange;
-    border-color: orange;
-    outline: none;
+    &:focus {
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      box-shadow: 0 0 5px orange;
+      border-color: orange;
+      outline: none;
+    }
   }
 
   .field-radio-group {
@@ -55,11 +55,12 @@
     text-transform: uppercase;
     cursor: pointer;
     width: 100%;
+
+    &:focus {
+      outline: none;
+      border-color: orange;
+      box-shadow: 0 0 5px orange;
+    }
   }
 
-  .btnReset:focus {
-    outline: none;
-    border-color: orange;
-    box-shadow: 0 0 5px orange;
-  }
 }
