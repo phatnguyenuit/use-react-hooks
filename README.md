@@ -1,13 +1,13 @@
 # Use React Hooks
 
-Simple demo for using React Hooks.
+Some examples for using React Hooks.
 
 ## Content
 
 - [x] useState
 - [x] useReducer
 - [x] useContext
-- [ ] useEffect
+- [x] useEffect
 - [ ] useCallback
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

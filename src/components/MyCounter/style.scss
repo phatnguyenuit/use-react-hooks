@@ -1,0 +1,41 @@
+.button-group {
+  margin: 0 auto;
+  width: 20vw;
+  font-size: 1.5rem;
+  padding: 0.5em;
+  margin-bottom: 1em;
+
+  .value {
+    display: inline-block;
+    width: 40%;
+  }
+
+  .button {
+    display: inline-block;
+    height: 2.5em;
+    border: 1px solid burlywood;
+    background: transparent;
+    border-radius: 8px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  .button:focus {
+    outline: none;
+    border-color: orange;
+    box-shadow: 0 0 5px orange;
+  }
+
+  .button--left {
+    width: 30%;
+  }
+
+  .button--right {
+    width: 30%;
+  }
+
+  .button--full-width {
+    width: 100%;
+  }
+}

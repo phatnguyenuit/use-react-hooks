@@ -25,7 +25,7 @@
 }
 
 .App-content {
-  margin-top: 2rem;
+  padding: 2rem;
   font-size: calc(10px + 2vmin);
 }
 

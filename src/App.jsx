@@ -12,6 +12,7 @@ import MyFormUseState, {
 } from "./components/MyForm";
 import React, { Component } from "react";
 
+import NewsList from "./components/HackerNews";
 import logo from "./logo.svg";
 
 class App extends Component {
@@ -20,7 +21,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <p>Hello, here are some simple demos with React Hooks!</p>
+          <p>Hello, here are some simple examples with React Hooks!</p>
           <a
             className="App-link"
             href="https://github.com/phatnguyenuit/use-react-hooks"
@@ -67,6 +68,13 @@ class App extends Component {
             <FormProvider>
               <MyFormWithContext />
             </FormProvider>
+          </div>
+          <h3>
+            4. <code>useEffect</code>
+          </h3>
+          <div>
+            <h4>Hacker News</h4>
+            <NewsList />
           </div>
         </main>
       </div>
