@@ -1,14 +1,15 @@
 # Use React Hooks
 
-Some examples for using React Hooks.
+Some examples for using [React Hooks](https://reactjs.org/docs/hooks-reference.html).
 
 ## Content
 
-- [x] useState
-- [x] useReducer
-- [x] useContext
-- [x] useEffect
-- [ ] useCallback
+- [x] [useState](https://reactjs.org/docs/hooks-reference.html#usestate)
+- [x] [useReducer](https://reactjs.org/docs/hooks-reference.html#usereducer)
+- [x] [useContext](https://reactjs.org/docs/hooks-reference.html#usecontext)
+- [x] [useEffect](https://reactjs.org/docs/hooks-reference.html#useeffect)
+- [ ] [useCallback](https://reactjs.org/docs/hooks-reference.html#usecallback)
+- [ ] [useMemo](https://reactjs.org/docs/hooks-reference.html#usememo)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -48,6 +49,10 @@ If you aren’t satisfied with the build tool and configuration choices, you can
 Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+### `npm run deploy`
+
+Deploy static web app to Github Pages
 
 ## Learn More
 
