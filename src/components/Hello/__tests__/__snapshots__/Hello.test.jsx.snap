@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test Hello component with \`react-test-renderer\` should render without error 1`] = `
+<div
+  className="hello-container"
+>
+  <p
+    className="greet"
+    data-testid="greet"
+  >
+    Hello, 
+    Guest
+    !
+  </p>
+  <div
+    className="hello-form"
+  >
+    <input
+      className="field-text"
+      data-testid="name"
+      placeholder="Please input your name!"
+      type="text"
+    />
+    <button
+      className="button"
+      data-testid="submit"
+      onClick={[Function]}
+      type="button"
+    >
+      Submit
+    </button>
+  </div>
+</div>
+`;

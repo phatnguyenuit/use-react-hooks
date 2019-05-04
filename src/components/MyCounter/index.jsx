@@ -24,14 +24,28 @@ const reducer = (state, action) => {
 const MyCounter = ({ value, increase, decrease, reset }) => {
   return (
     <div className="button-group">
-      <button className="button button--left" onClick={decrease}>
+      <button
+        className="button button--left"
+        onClick={decrease}
+        data-testid="button-decrease"
+      >
         -
       </button>
-      <div className="value">{value}</div>
-      <button className="button button--right" onClick={increase}>
+      <div className="value" data-testid="counter-value">
+        {value}
+      </div>
+      <button
+        className="button button--right"
+        onClick={increase}
+        data-testid="button-increase"
+      >
         +
       </button>
-      <button className="button button--full-width" onClick={reset}>
+      <button
+        className="button button--full-width"
+        onClick={reset}
+        data-testid="button-reset"
+      >
         reset
       </button>
     </div>

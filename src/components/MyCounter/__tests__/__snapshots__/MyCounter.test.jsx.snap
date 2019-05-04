@@ -1,0 +1,103 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test MyCounter(s) component with \`react-test-renderer\` MyCounterReducer should render without error 1`] = `
+<div
+  className="button-group"
+>
+  <button
+    className="button button--left"
+    data-testid="button-decrease"
+    onClick={[Function]}
+  >
+    -
+  </button>
+  <div
+    className="value"
+    data-testid="counter-value"
+  >
+    0
+  </div>
+  <button
+    className="button button--right"
+    data-testid="button-increase"
+    onClick={[Function]}
+  >
+    +
+  </button>
+  <button
+    className="button button--full-width"
+    data-testid="button-reset"
+    onClick={[Function]}
+  >
+    reset
+  </button>
+</div>
+`;
+
+exports[`Test MyCounter(s) component with \`react-test-renderer\` MyCounterUseState should render without error 1`] = `
+<div
+  className="button-group"
+>
+  <button
+    className="button button--left"
+    data-testid="button-decrease"
+    onClick={[Function]}
+  >
+    -
+  </button>
+  <div
+    className="value"
+    data-testid="counter-value"
+  >
+    0
+  </div>
+  <button
+    className="button button--right"
+    data-testid="button-increase"
+    onClick={[Function]}
+  >
+    +
+  </button>
+  <button
+    className="button button--full-width"
+    data-testid="button-reset"
+    onClick={[Function]}
+  >
+    reset
+  </button>
+</div>
+`;
+
+exports[`Test MyCounter(s) component with \`react-test-renderer\` MyCounterWithContext should render without error 1`] = `
+<div
+  className="button-group"
+>
+  <button
+    className="button button--left"
+    data-testid="button-decrease"
+    onClick={[Function]}
+  >
+    -
+  </button>
+  <div
+    className="value"
+    data-testid="counter-value"
+  >
+    0
+  </div>
+  <button
+    className="button button--right"
+    data-testid="button-increase"
+    onClick={[Function]}
+  >
+    +
+  </button>
+  <button
+    className="button button--full-width"
+    data-testid="button-reset"
+    onClick={[Function]}
+  >
+    reset
+  </button>
+</div>
+`;

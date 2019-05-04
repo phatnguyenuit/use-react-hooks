@@ -22,15 +22,23 @@ const Hello = () => {
   return (
     <div className="hello-container">
       {/* Rerence: https://www.fullstackreact.com/articles/an-introduction-to-hooks-in-react/#useref-hook-example */}
-      <p className="greet">Hello, {formatedName}!</p>
+      <p className="greet" data-testid="greet">
+        Hello, {formatedName}!
+      </p>
       <div className="hello-form">
         <input
           ref={nameRef}
           type="text"
           className="field-text"
           placeholder="Please input your name!"
+          data-testid="name"
         />
-        <button className="button" type="button" onClick={hanldeSubmit}>
+        <button
+          className="button"
+          type="button"
+          onClick={hanldeSubmit}
+          data-testid="submit"
+        >
           Submit
         </button>
       </div>
