@@ -2,9 +2,9 @@ import "./style.scss";
 
 import React, { useEffect, useState } from "react";
 
-import Axios from "axios";
 import News from "./News";
 import TextInput from "../MyForm/TextInput";
+import axios from "axios";
 
 const API_URL = "https://hn.algolia.com/api/v1";
 
@@ -23,8 +23,10 @@ const NewsList = props => {
   };
   useEffect(() => {
     setState(prevState => ({ ...prevState, loading: true, erorr: "" }));
-    Axios(`${API_URL}/search?query=${query}`)
+    axios
+      .get(`${API_URL}/search?query=${query}`)
       .then(res => {
+        console.log(res);
         const { hits = [] } = res.data || {};
         setState(prevState => ({
           ...prevState,
@@ -51,12 +53,12 @@ const NewsList = props => {
         value={query}
         onChangeText={handleChangeText}
       />
-      {loading && <p>Loading....</p>}
-      {!loading && !!error && <p>Error: {error}</p>}
+      {loading && <p data-testid="loading">Loading....</p>}
+      {!loading && !!error && <p data-testid="error">Error: {error}</p>}
       {!loading && items.length > 0 && (
         // TODO: We can paginate with parameter page=x in the URL
         // Follow: https://hn.algolia.com/api for more information
-        <ol>
+        <ol data-testid="result">
           <span>Results:</span>
           {items
             .filter(item => !!item.url)

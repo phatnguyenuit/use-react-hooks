@@ -58,16 +58,16 @@ const testCounterBehavior = counterContainer => {
 
 describe("Test MyCounter(s) component with `react-testing-library`", () => {
   afterEach(cleanup);
-  test("MyCounterReducer should render without error", () => {
+  test("MyCounterReducer should render with the right props", () => {
     const { container } = render(<MyCounterReducer />);
     testCounterBehavior(container);
   });
 
-  test("MyCounterUseState should render without error", () => {
+  test("MyCounterUseState should render  with the right props", () => {
     const { container } = render(<MyCounterUseState />);
     testCounterBehavior(container);
   });
-  test("MyCounterWithContext should render without error", () => {
+  test("MyCounterWithContext should render  with the right props", () => {
     const { container } = render(
       <CounterProvider>
         <MyCounterWithContext />

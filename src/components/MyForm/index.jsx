@@ -30,6 +30,7 @@ const MyForm = ({ firstName, lastName, handleChangeText, handleReset }) => {
           name="firstName"
           value={firstName}
           onChangeText={handleChangeText}
+          data-testid="firstName"
         />
       </div>
       <div className="field-group">
@@ -39,12 +40,19 @@ const MyForm = ({ firstName, lastName, handleChangeText, handleReset }) => {
           name="lastName"
           value={lastName}
           onChangeText={handleChangeText}
+          data-testid="lastName"
         />
       </div>
 
       <div>
-        <p>{JSON.stringify({ firstName, lastName })}</p>
-        <button className="btnReset" onClick={handleReset}>
+        <p data-testid="formValues">
+          {JSON.stringify({ firstName, lastName })}
+        </p>
+        <button
+          className="btnReset"
+          onClick={handleReset}
+          data-testid="buttonReset"
+        >
           Reset
         </button>
       </div>

@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test News component with \`react-test-renderer\` News should render without error 1`] = `
+<li>
+  <a
+    href="https://facebook.github.io/react/blog/2017/09/26/react-v16.0.html"
+    target="_blank"
+  >
+    React 16
+  </a>
+</li>
+`;

@@ -1,0 +1,166 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test MyForm(s) component with \`react-test-renderer\` MyFormReducer should render without error 1`] = `
+<div
+  className="my-form"
+>
+  <div
+    className="field-group"
+  >
+    <div
+      className="field-label"
+    >
+      First Name:
+    </div>
+    <input
+      className="field-text"
+      data-testid="firstName"
+      name="firstName"
+      onChange={[Function]}
+      type="text"
+      value=""
+    />
+  </div>
+  <div
+    className="field-group"
+  >
+    <span
+      className="field-label"
+    >
+      Last Name:
+    </span>
+    <input
+      className="field-text"
+      data-testid="lastName"
+      name="lastName"
+      onChange={[Function]}
+      type="text"
+      value=""
+    />
+  </div>
+  <div>
+    <p
+      data-testid="formValues"
+    >
+      {"firstName":"","lastName":""}
+    </p>
+    <button
+      className="btnReset"
+      data-testid="buttonReset"
+      onClick={[Function]}
+    >
+      Reset
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Test MyForm(s) component with \`react-test-renderer\` MyFormUseState should render without error 1`] = `
+<div
+  className="my-form"
+>
+  <div
+    className="field-group"
+  >
+    <div
+      className="field-label"
+    >
+      First Name:
+    </div>
+    <input
+      className="field-text"
+      data-testid="firstName"
+      name="firstName"
+      onChange={[Function]}
+      type="text"
+      value=""
+    />
+  </div>
+  <div
+    className="field-group"
+  >
+    <span
+      className="field-label"
+    >
+      Last Name:
+    </span>
+    <input
+      className="field-text"
+      data-testid="lastName"
+      name="lastName"
+      onChange={[Function]}
+      type="text"
+      value=""
+    />
+  </div>
+  <div>
+    <p
+      data-testid="formValues"
+    >
+      {"firstName":"","lastName":""}
+    </p>
+    <button
+      className="btnReset"
+      data-testid="buttonReset"
+      onClick={[Function]}
+    >
+      Reset
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Test MyForm(s) component with \`react-test-renderer\` MyFormWithContext should render without error 1`] = `
+<div
+  className="my-form"
+>
+  <div
+    className="field-group"
+  >
+    <div
+      className="field-label"
+    >
+      First Name:
+    </div>
+    <input
+      className="field-text"
+      data-testid="firstName"
+      name="firstName"
+      onChange={[Function]}
+      type="text"
+      value=""
+    />
+  </div>
+  <div
+    className="field-group"
+  >
+    <span
+      className="field-label"
+    >
+      Last Name:
+    </span>
+    <input
+      className="field-text"
+      data-testid="lastName"
+      name="lastName"
+      onChange={[Function]}
+      type="text"
+      value=""
+    />
+  </div>
+  <div>
+    <p
+      data-testid="formValues"
+    >
+      {"firstName":"","lastName":""}
+    </p>
+    <button
+      className="btnReset"
+      data-testid="buttonReset"
+      onClick={[Function]}
+    >
+      Reset
+    </button>
+  </div>
+</div>
+`;
