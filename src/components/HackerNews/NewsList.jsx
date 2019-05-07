@@ -19,14 +19,21 @@ const NewsList = props => {
   const { query, items, loading, error } = state;
   const handleChangeText = e => {
     const { value } = e.currentTarget;
-    setState(prevState => ({ ...prevState, query: value }));
+    setState(prevState => ({
+      ...prevState,
+      query: value
+    }));
   };
+  //useEffect: https://www.robinwieruch.de/react-hooks-fetch-data/
   useEffect(() => {
-    setState(prevState => ({ ...prevState, loading: true, erorr: "" }));
+    setState(prevState => ({
+      ...prevState,
+      loading: true,
+      erorr: ""
+    }));
     axios
       .get(`${API_URL}/search?query=${query}`)
       .then(res => {
-        console.log(res);
         const { hits = [] } = res.data || {};
         setState(prevState => ({
           ...prevState,
@@ -44,6 +51,9 @@ const NewsList = props => {
         }))
       );
     // Can return a callback to clean in componentWillUnmount phase
+    return () => {
+      console.log("Clean up!");
+    };
   }, [query]);
   return (
     <div className="hacker-news-container">
@@ -52,6 +62,7 @@ const NewsList = props => {
         className="field-text"
         value={query}
         onChangeText={handleChangeText}
+        data-testid="search-query"
       />
       {loading && <p data-testid="loading">Loading....</p>}
       {!loading && !!error && <p data-testid="error">Error: {error}</p>}

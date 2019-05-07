@@ -1,3 +1,3 @@
-// export default {
-//   get: jest.fn()
-// };
+export default {
+  get: jest.fn()
+};

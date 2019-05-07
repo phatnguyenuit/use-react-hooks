@@ -11,6 +11,7 @@ exports[`Test News component with \`react-test-renderer\` News should render wit
   </span>
   <input
     className="field-text"
+    data-testid="search-query"
     onChange={[Function]}
     type="text"
     value=""
