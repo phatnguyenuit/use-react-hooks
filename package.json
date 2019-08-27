@@ -5,7 +5,7 @@
   "author": "Phat Nguyen <phatnt.uit@gmail.com> (https://phatnguyenuit.github.io)",
   "homepage": "https://phatnguyenuit.github.io/use-react-hooks",
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.18.1",
     "node-sass": "^4.11.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
